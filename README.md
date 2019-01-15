@@ -12,8 +12,8 @@ Notes on the video analysis, which was done with [Vernier's Logger Pro](https://
 As this is used (by me) for research and education purposes (ie, I'm not selling the video I had python download), I believe this falls under fair use.  However, I am not an attorney and this is not legal advice.
 
 Notes on the python code
-1. There's currently an error in the pytube module that pip downloads by default.  [This link](https://stackoverflow.com/questions/54028675/pytube-library-recei) ving-pyt  I'mube-exceptions-regexmatcherror-regex-pattern-er) pointed me to an updated version.
-2. The code uses the standard download in the [pytube](https://pypi.org/project/pytube/) tutorial  I'm.  
+1. There's currently an error in the pytube module that pip downloads by default.  A [stackoverflow](https://stackoverflow.com/questions/54028675/) page pointed me to an updated version of the library.
+2. The code uses the standard Youtube download format in the [pytube](https://pypi.org/project/pytube/) tutorial.  I'm sure you could make it fancier.  
 
 Nathan Moore
 Winona State University
