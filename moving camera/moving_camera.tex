@@ -31,14 +31,17 @@ One common source of error in video analysis is camera movement.  The paper desc
 \section{Introduction} 
 Video analysis is a convenient and fun way to collect kinematic position-time information for a motion that may not be otherwise accessible in the introductory lab.  The general procedure is to track the successive motion of an object via it's x and y pixel position over multiple frames of a video.  
 
-One example of this is Eugenia Etkina's  ISLE video curriculum, \cite{ISLE_site}, which builds understanding through student analysis of videos.  For example, in the 2-D Projectile motion unit,
-one video \cite{ISLE_ball_video_source}, involves Dr. Etkina tossing a ball vertically while rolling across the room on rollerblades. 
+One curriculum that uses video analysis as a learning support to construct and test ideas is Eugenia Etkina's ISLE approach to learning physics \cite{ISLE_overview}. 
+For example, in the 2-D Projectile motion unit, one video \cite{ISLE_ball_video_source}, involves Dr. Etkina tossing a ball vertically while rolling across the room on rollerblades. If you are reading the paper on a computer, you might watch the video now \url{http://islevideos.net/experiment.php?topicid=2&exptid=95}.   
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=\columnwidth]{Etkina-calibration.jpg}
 \caption{ 
-A screenshot from Eugenia Etkina's ISLE video curriculum.  The video has been imported for analysis in Vernier's LoggerPro software.    Horizontal  scale is given via the set of vertical lines drawn on the chalkboard with \textit{assumed} spacing of $10$cm. The (green) calibration stick is assumed to be 1.4m in length via lines drawn on the chalkboard.  The video can be downloaded from \cite{ISLE_ball_video_source} .
+A screenshot from the ISLE-based video website (developed by E. Etkina and D.T.Brookes).
+The video has been imported for analysis in Vernier's LoggerPro software.    
+Horizontal  scale is given via the set of vertical lines drawn on the chalkboard with assumed spacing of $10$cm. 
+The (green) calibration stick is assumed to be 1.4m in length via lines drawn on the chalkboard.  The video can be downloaded from \cite{ISLE_ball_video_source} .
 }
 \label{Etkina-calibration}
 \end{figure}
@@ -70,6 +73,7 @@ There are also a number of video analysis software programs that allow students 
 
 In both of these packages, students repeatedly click on an object of interest and the software then collects time and 2D position data  in spreadsheet form.  However, the data collected is in units of an x,y pixel pair.  Conversion from pixel to physical dimension is a student task, and the quality of student results can depend on the ``calibration stick''\cite{calibration_stick} they employ.
 
+\section{Fixing moving camera motion} 
 Figures \ref{Etkina-calibration} and \ref{Etkina-dots-2} show the analysis process for the video in which Dr. Etkina throws a ball vertically while rollerblading across the classroom.  The video of this event was taken by a camera that followed Etkina, so via direct tracking of the ball, the horizontal component is lost.
 
 However, if a student also tracks the motion of a seemingly immobile object, for example the center seam of the chalkboard, the center of the clock, a corner of the calibration sheets, etc, the student can recover the horizontal motion of the ball via vector subtraction.  Specifically, if you write  the ball's position relative to the classroom wall as, $X_{ball~wrt~wall}$, you can then express this position as a difference.
@@ -144,7 +148,7 @@ The bear video was shot by a professional videographer, Mark Hoyoak, and the foc
 \centering
 \includegraphics[width=\columnwidth]{bear-speed.jpg}
 \caption{
-A screenshot from LoggerPro, showing the vertical position-time graph for both the bear (blue, center of mass), the lower left corner one of the house's transom windows (red) and the (calculated) bear's motion relative to the window (orange). 
+A screenshot from LoggerPro, showing the vertical position-time graph for both the bear (blue, center of mass), the lower left corner one of the house's transom windows (red) and the bear's (calculated)  motion relative to the window (orange). 
 }
 \label{bear-speed}
 \end{figure}
@@ -158,7 +162,7 @@ This analysis is shown in figures \ref{bear-dots}, \ref{bear-speed}, and \ref{be
 \centering
 \includegraphics[width=\columnwidth]{bear-quadratic.jpg}
 \caption{
-A quadratic fit to the bear's position (relative to the window) shows a $time^2$ polynomial with gravitational acceleration of about $g=9.4\pm 0.1~m/s^2$.  This is obviously not the standard $g$ value from the textbook and suggests both ``clicking error'' in tracking the motion and calibration error in assuming the trampoline is $1$ meter high.  Never-the-less, the corrected motion (unlike that of the bear from the moving camera, (blue) is clearly quadratic, which is a demonstration of the utility of the approach used in this paper.
+A quadratic fit to the bear's position (relative to the window) shows a $time^2$ polynomial with gravitational acceleration of about $g=9.4\pm 0.1~m/s^2$.  This is obviously not the standard $g$ value from the textbook and suggests both ``clicking error'' in tracking the motion and calibration error in assuming the trampoline is $1$ meter high.  Never-the-less, the corrected motion (unlike that of the bear from the moving camera, in blue) is clearly quadratic, which is a demonstration of the utility of the approach used in this paper.
 }
 \label{bear-quadratic}
 \end{figure}
@@ -178,7 +182,13 @@ The work would not have been possible without Mark Hoyoak's excellent videograph
 % numerical labels, so only the number of digits should matter--and even that
 % seems to make no discernible difference.
 
-\bibitem{ISLE_site} Professor Etkina's group has been active in this area for quite a while.  Here is a pointer to the video archive I'm using. \url{http://islevideos.net/}
+\bibitem{ISLE_overview}  
+The ISLE approach to learning physics is described in 
+Etkina, E. (2015). Millikan award lecture: Students of physics—Listeners, observers, or collaborative participants in physics scientific practices? American Journal of Physics, 83(8), 669-679. DOI: 10.1119/1.4923432 and 
+Brookes, D. T., \& Etkina, E. (2010). Physical Phenomena in real time. Science, 330, 605-606
+Here is a pointer to the video archive I'm using. \url{http://islevideos.net/}
+
+%\bibitem{ISLE_site} Professor Etkina's group has been active in this area for quite a while.  Here is a pointer to the video archive I'm using. \url{http://islevideos.net/}
   
 \bibitem{ISLE_ball_video_source}
 The ball toss video used in the first part of the paper is available for download at \url{http://islevideos.net/experiment.php?topicid=2&exptid=95}
