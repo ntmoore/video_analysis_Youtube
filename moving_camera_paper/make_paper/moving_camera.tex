@@ -80,8 +80,8 @@ Y_{ball~wrt~wall} &=& Y_{ball~wrt~camera}-Y_{clock~wrt~camera}\nonumber
 \eea
 This subtraction can be accomplished in LoggerPro as a ``calculated column'' or the data can be exported to a spreadsheet and the operation performed there.  
 
-Results from this change of reference frame are shown in figures \ref{Etkina-Y-T-plot} and \ref{Etkina-X-T-plot} . 
-In the introductory curriculum, frames of reference sometimes seems dry or contrived, but in video analysis projects with a moving camera, thinking about the movement of a seemingly immobile reference frame can be a magic bullet.
+Results from this change of reference frame, using Logger Pro, are shown in figures \ref{Etkina-Y-T-plot} and \ref{Etkina-X-T-plot} . 
+In the introductory curriculum, frames of reference sometimes seem dry or contrived, but in video analysis projects with a moving camera, thinking about the movement of a seemingly immobile reference frame can be a magic bullet.  Some video analysis programs, for example, Tracker, allow automatic tracking of motion within a moving frame of reference\cite{tracker_planets}.  
 
 \begin{figure}[h]
 \centering
@@ -146,12 +146,15 @@ This analysis is shown in figures \ref{bear-dots}, \ref{bear-speed}, and \ref{be
 The analysis assumes a trampoline leg height of $1$ meter, which, based on the extracted gravitational acceleration values, is probably inaccurate.
  
  Straight-line fits to the bear's vertical position give speeds of $12.3m/s\approx27mph\approx44kmph$ as the bear hits the trampoline, and $5.9m/s\approx13mph\approx21kmph$ at about the same altitute after bouncing off the trampoline.  Based on the data in Figure 1b of \cite{AccidentRisk} this corresponds to a reduction of pedestrian fatality risk from $5\%$ to less than $1\%$.  Extrapolating from vehicle fatality data, one could arge that in addition to being good comedy, using a trampoline in this case is humane wildlife management.     
+ 
+ In addition to applications in mechanics, it is likely that this moving frame of reference technique could be applied in the introductory astronomy curriculum, for example \cite{tracker_planets} or \cite{retrograde_planets}.
      
 \begin{figure}[h]
 \centering
 \includegraphics[width=\columnwidth]{figure_8_bear-quadratic.pdf}
 \caption{
-A quadratic fit to the bear's position (relative to the window) shows a $time^2$ polynomial with gravitational acceleration of about $g=9.4\pm 0.1~m/s^2$.  This is obviously not the standard $g$ value from the textbook and suggests both ``clicking error'' in tracking the motion and calibration error in assuming the trampoline is $1$ meter high.  Never-the-less, the corrected motion (unlike that of the bear from the moving camera) is clearly quadratic, which is a demonstration of the utility of the approach used in this paper.
+A quadratic fit to the bear's position (relative to the window) shows a $time^2$ polynomial with gravitational acceleration of about $g=9.4\pm 0.1~m/s^2$.  This is obviously not the standard $g$ value from the textbook and suggests both ``clicking error'' in tracking the motion and calibration error in assuming the trampoline is $1$ meter high. The real height of the trampoline could be backwards fit by scaling the observed $g$ value to $9.8$ as described in \cite{backwards_fit}. 
+Never-the-less, the corrected motion (unlike that of the bear from the moving camera) is clearly quadratic, which is a demonstration of the utility of the approach used in this paper.
 }
 \label{bear-quadratic}
 \end{figure}
@@ -202,7 +205,7 @@ The ball toss video used in the first part of the paper is available for downloa
 
 \bibitem{Bohacek_youtube_intro}
 See the excellent introduction at 
-\url{https://www.youtube.com/watch?v=QsGMKv8Lrew} .
+\url{https://www.youtube.com/watch?v=QsGMKv8Lrew}. This screenshot comes from \url{https://www.youtube.com/watch?v=CMpc1cXqC7s}.
 
 \bibitem{Bohacek_overview} Peter Bohacek's YouTube channel contains a large number of these videos \url{https://www.youtube.com/user/bohacekphysics}.  
 A nice overview of the approach he takes is given in \url{https://www.youtube.com/watch?v=QsGMKv8Lrew}. 
@@ -214,6 +217,14 @@ These videos are available as a commercial curriculum at \url{https://www.pivoti
 \url{https://www.vernier.com/product/logger-pro-3/}
 
 \bibitem{calibration_stick} Here is the help page for calibration sticks in Tracker \url{https://physlets.org/tracker/help/frameset.html}.  The process in LoggerPro is similar.
+
+\bibitem{tracker_planets}
+Programming Ozobots for teaching astronomy
+Mariana Balaton1, Jorge Cavadas1, Paulo Simeão Carvalho2,3,4 and J J G Lima4,5
+Published 18 May 2021 • © 2021 IOP Publishing Ltd
+Physics Education, Volume 56, Number 4
+Citation Mariana Balaton et al 2021 Phys. Educ. 56 045018
+DOI 10.1088/1361-6552/abfb44
 
 \bibitem{bear_video_source}
 There are many copies of this video on the web.  It seems that the original video was taken by Mark Hoyoak of KPAX News in Montana on September 9, 2003.  The clip was subsequently featured on national news and comedy programs.  For an overview, see \url{https://www.youtube.com/watch?v=jB47Vucoj2o} .
@@ -228,6 +239,21 @@ Pedestrian fatality risk as a function of car impact speed
 536
 %536-542
 
+\bibitem{backwards_fit}
+Teaching physics with Angry Birds: exploring the kinematics and dynamics of the game
+M Rodrigues1,2 and P Simeão Carvalho2,3
+© 2013 IOP Publishing Ltd
+Physics Education, Volume 48, Number 4
+Citation M Rodrigues and P Simeão Carvalho 2013 Phys. Educ. 48 431
+DOI 10.1088/0031-9120/48/4/431
+
+\bibitem{retrograde_planets}
+Orbital motions of astronomical bodies and their centre of mass from different reference frames: a conceptual step between the geocentric and heliocentric models
+André G C Guerra1 and Paulo Simeão Carvalho2,3
+Published 1 August 2016 • © 2016 IOP Publishing Ltd
+Physics Education, Volume 51, Number 5
+Citation André G C Guerra and Paulo Simeão Carvalho 2016 Phys. Educ. 51 055012
+DOI 10.1088/0031-9120/51/5/055012
 
 \end{thebibliography}
 
