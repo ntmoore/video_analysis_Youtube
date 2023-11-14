@@ -28,7 +28,7 @@ Department of Physics, Winona State University, Winona, MN 55987, USA}
 One common source of error in video analysis is camera movement.  The paper describes a simple frame of reference correction that students can employ to salvage otherwise corrupted video analysis data.  Two examples are provided. 
 \end{abstract}
 
-\noindent{\it Keywords\/}: video analysis, LoggerPro, frames of reference, kinematics
+\noindent{\it Keywords\/}: video analysis, Logger Pro, frames of reference, kinematics
 
 \submitto{\PED}
 
@@ -45,8 +45,8 @@ For example, in the 2-D Projectile motion unit, one video \cite{ISLE_ball_video_
 \centering
 \includegraphics[width=\columnwidth]{figure_1_Etkina-calibration.jpg}
 \caption{ 
-A screenshot from the ISLE-based video website (developed by E. Etkina and D.T.Brookes).
-The video has been imported for analysis in Vernier's LoggerPro software.    
+A screenshot from the ISLE-based video website (developed by E. Etkina and D.T.Brookes, reproduced with permission from \cite{ISLE_ball_video_source}).
+The video has been imported for analysis in Vernier's Logger Pro software.    
 Horizontal  scale is given via the set of vertical lines drawn on the chalkboard with assumed spacing of $10$cm. 
 The (green) calibration stick is assumed to be 1.4m in length via lines drawn on the chalkboard.  The video can be downloaded from \cite{ISLE_ball_video_source} .
 }
@@ -59,7 +59,7 @@ The (green) calibration stick is assumed to be 1.4m in length via lines drawn on
 %\caption{A screenshot from Peter Bohacek's Direct Measurement Videos, \cite{Bohacek_youtube_intro}. In this case, position information is given by a drawn overlay added to the video via post-processing.
 %}
 \includegraphics[width=\columnwidth]{figure_2_Rocket.png}
-\caption{A screenshot from Vernier's LoggerPro, showing the author and his children attending a rocket launch on a lazy holiday morning.  Via the analysis software, distance information is given by the length of the rocket (11 inches, from a rolled up piece of US Letter paper).  As the rocket is launched diagonally,  the yellow x-y coordinate frame is rotated to reflect and capture the rocket's one-dimensional motion.  The video is available online \cite{rocket-github}.
+\caption{A screenshot from Vernier's Logger Pro, showing the author and his children attending a rocket launch on a lazy holiday morning.  Via the analysis software, distance information is given by the length of the rocket (11 inches, from a rolled up piece of US Letter paper).  As the rocket is launched diagonally,  the yellow x-y coordinate frame is rotated to reflect and capture the rocket's one-dimensional motion.  The video is available online \cite{rocket-github}.
 }
 \label{figure-2-rocket}
 \end{figure}
@@ -81,7 +81,7 @@ However, if a student also tracks the motion of a seemingly immobile object, for
 X_{ball~wrt~wall} &=& X_{ball~wrt~camera}-X_{clock~wrt~camera} \nonumber\\ 
 Y_{ball~wrt~wall} &=& Y_{ball~wrt~camera}-Y_{clock~wrt~camera}\nonumber
 \eea
-This subtraction can be accomplished in LoggerPro as a ``calculated column'' or the data can be exported to a spreadsheet and the operation performed there.  Some video analysis programs, for example, Tracker, allow automatic tracking of motion within a moving frame of reference\cite{tracker_planets}, but in the introductory classroom it seems meaningful to do the frame of reference calculation explicitly before treating it as automatic tacit knowledge.
+This subtraction can be accomplished in Logger Pro as a ``calculated column'' or the data can be exported to a spreadsheet and the operation performed there.  Some video analysis programs, for example, Tracker, allow automatic tracking of motion within a moving frame of reference\cite{tracker_planets}, but in the introductory classroom it seems meaningful to do the frame of reference calculation explicitly before treating it as automatic tacit knowledge.
 
 Results from this change of reference frame, using Logger Pro, are shown in figures \ref{Etkina-Y-T-plot} and \ref{Etkina-X-T-plot} . 
 In the introductory curriculum, frames of reference sometimes seem dry or contrived, but in video analysis projects with a moving camera, thinking about the movement of a seemingly immobile reference frame can be a magic bullet.  
@@ -90,9 +90,9 @@ In the introductory curriculum, frames of reference sometimes seem dry or contri
 \centering
 \includegraphics[width=\columnwidth]{figure_3_Etkina-dots-2.jpg}
 \caption{
-A screenshot from LoggerPro, showing both the track of the pink ball (blue dots) and the track made by the clock (red dots).  Note, the clock is attached to a concrete block wall, so the red dots also show the motion of the camera.  
+A screenshot from Logger Pro, showing both the track of the pink ball (blue dots) and the track made by the clock (red dots).  Note, the clock is attached to a concrete block wall, so the red dots also show the motion of the camera.  
 While the ball is certainly moving across the classroom horizontally, the moving camera does not show this motion in the track of blue dots.
-The position of the ball \textit{with respect to the classroom} can be generated via vector subtraction of the ball-camera and clock-camera reference frames.
+The position of the ball \textit{with respect to the classroom} can be generated via vector subtraction of the ball-camera and clock-camera reference frames.  Reproduced with permission from \cite{ISLE_ball_video_source}.
 }
 \label{Etkina-dots-2}
 \end{figure}
@@ -111,7 +111,7 @@ Looking carefully, you can see that correcting for the relative motion of the ca
 \centering
 \includegraphics[width=\columnwidth]{figure_5_Etkina-X-T-plot.pdf}
 \caption{
-A plot from LoggerPro showing the horizontal position of the clock, the ball, and the difference between the two, ie the horizontal position of the ball relative to the clock.  This graph shows how motion hidden by a moving camera can be recovered if you subtract away the (camera) motion of a fixed reference.
+A plot from Logger Pro showing the horizontal position of the clock, the ball, and the difference between the two, ie the horizontal position of the ball relative to the clock.  This graph shows how motion hidden by a moving camera can be recovered if you subtract away the (camera) motion of a fixed reference.
 }
 \label{Etkina-X-T-plot}
 \end{figure}
@@ -129,7 +129,8 @@ So, an ethical question: ``Assuming the bear had to be removed from the tree, wa
 \centering
 \includegraphics[width=\columnwidth]{figure_6_bear-dots.jpg}
 \caption{
-A screenshot from LoggerPro, showing the position-time track for both the bear and the lower left corner of the house's left transom window. The calibration used is the trampoline's leg height of $1$m.  The calibration stick has drifted off to the left because of the movement of the camera.  The calibration length is only an estimate and should probably be back fit to the appropriate gravitational acceleration value for the bear's free-fall.
+A screenshot from Logger Pro, showing the position-time track for both the bear and the lower left corner of the house's left transom window. The calibration used is the trampoline's leg height of $1$m.  The calibration stick has drifted off to the left because of the movement of the camera.  The calibration length is only an estimate and should probably be back fit to the appropriate gravitational acceleration value for the bear's free-fall.
+Reproduced with permission from \cite{bear_video_source}
 }
 \label{bear-dots}
 \end{figure}
@@ -219,10 +220,10 @@ These videos are available as a commercial curriculum at \url{https://www.pivoti
 
 \bibitem{Tracker} Tracker is a free, open-source tool that you can install on your computer or run in a web browser.  It is available online at \url{https://physlets.org/tracker/} .
 
-\bibitem{LoggerPro} Vernier's LoggerPro is typically used for lab data acquisition but it contains an excellent video analysis tool that this paper employs. 
+\bibitem{LoggerPro} Vernier's Logger Pro is typically used for lab data acquisition but it contains an excellent video analysis tool that this paper employs. 
 \url{https://www.vernier.com/product/logger-pro-3/}
 
-\bibitem{calibration_stick} Here is the help page for calibration sticks in Tracker \url{https://physlets.org/tracker/help/frameset.html}.  The process in LoggerPro is similar.
+\bibitem{calibration_stick} Here is the help page for calibration sticks in Tracker \url{https://physlets.org/tracker/help/frameset.html}.  The process in Logger Pro is similar.
 
 \bibitem{tracker_planets}
 Balaton M, Cavadas J, Simeão Carvalho P, and Lima J
